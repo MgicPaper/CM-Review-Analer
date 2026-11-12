@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "ReviewAnaler",
+  "version": "0.1.0",
+  "description": "쿠팡 리뷰를 직접 조회하고 선택한 리뷰를 분석합니다.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "https://www.coupang.com/*"
+  ],
+  "action": {
+    "default_title": "ReviewAnaler",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "worker.js",
+    "type": "module"
+  }
+}

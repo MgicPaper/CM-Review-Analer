@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ReviewAnaler Architecture Smoke Test",
+  "version": "0.1.0",
+  "host_permissions": [
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://127.0.0.1/*"
+      ],
+      "js": [
+        "collect.js"
+      ]
+    }
+  ]
+}
